@@ -1,6 +1,6 @@
-FROM n8nio/n8n:latest
+FROM node:18-alpine
 
-USER root
+RUN npm install -g n8n
 
 ENV N8N_PORT=5678
 ENV N8N_PROTOCOL=https
